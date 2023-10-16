@@ -1,0 +1,256 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E2e1DE;
+  
+  }
+  
+  .back-ground{
+    background-color: #00A884;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .chat-container{
+    width: 95%;
+    max-width: 1800px;
+    height: 750px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+  
+  }
+  
+  .chat-contacts{
+    width: 30%;
+    height:100%;
+    border-right: 1px solid #e6e6e6;
+   
+  }
+  
+  .chat-item{
+    box-sizing: border-box;
+    padding: 10px;
+    border-top: 1px solid #f0f2f5;
+    border-bottom: 1px solid #f0f2f5;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .title-chat-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  
+  .image-profile{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .title-message{
+    font-size: 18px;
+  }
+  
+  .last-message{
+    color:#808080;
+  }
+  
+  .chat-options{
+    width: 100%;
+    height: 80px;
+    background-color: #F0F2F5;
+  }
+  
+  .chat-messages{
+    flex: 1;
+    background-image: url('./assets/zap.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+  
+  .chat-messages-area{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 20px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #8c8c8c;
+    border-radius: 20px;
+  }
+  
+  .chat-input-area{
+    width: 100%;
+    height: 70px;
+    background-color: #F0F2F5;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .chat-input{
+    width: 90%;
+    background-color: #fff;
+    height: 45px;
+    border: none;
+    outline:none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 16px;
+  }
+  
+  .send-message-icon{
+    width: 40px;
+    height: 45px;
+    cursor: pointer;
+  }
+  
+  .user-container-message {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 2px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  
+  }
+  
+  .right {
+    justify-content: flex-end;
+  }
+  
+  .left {
+    justify-content: flex-start;
+  }
+  
+  
+  .user-name {
+      font-weight: bold; /* Deixa o nome em negrito */
+      margin-bottom: 5px;
+     
+    }
+  
+  
+  .user-my-message {
+    background-color: #D9FDD3;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  
+  .user-other-message {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com 80% de opacidade */
+    width: 100%;
+    margin-top: 180px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  }
+  
+  
+  .LogoWhats {
+    width: 200px; 
+    margin: 0 auto; 
+    display: block;
+  }
+  
+  .botao {
+    padding: 10px 20px;
+    border: none;
+    background-color: #25D366;;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 auto; /* Centralizar horizontalmente */
+    display: block; /* Para centralizar verticalmente */
+    margin-right:123px;
+    margin-top:10px;
+    margin-bottom:60px;
+    width: 155px;
+  
+    &:hover {
+      background-color: #008000;
+    }
+  }
+  
+  .nome {
+    font-size: 14px;
+    color: #777;
+    line-height: 30px; /* Ajuste o valor para controlar o espaçamento para baixo */
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    border-radius: 5px;
+  
+    &::placeholder {
+      text-align: left;
+    }
+  }
+  
+  .SeuNome {
+    margin-top: 20px;
+   margin-bottom: 10px;
+  }
+  
+  
+  
+  .login-background {
+    background-image: url('./assets/background-whatsapp-.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%; /* Largura da tela */
+    height: 100%; /* Altura da tela */
+    position: absolute; /* Para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca a imagem de fundo atrás de todos os outros elementos */
+  }
+  
+  
+  
+  .user-message {
+   
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
